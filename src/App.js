@@ -1,10 +1,12 @@
-// import React from "react";
+import React from "react";
 import { Counter } from "./features/counter/Counter";
 import "./App.css";
 import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
-import ProductList  from "./features/product-list/ProductList";
+// import ProductList  from "./features/product-list/ProductList";
+// import NavBar from "../features/navbar/Navbar";
+
 
 
 import {
@@ -16,7 +18,7 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Home></Home>,
   },
   {
@@ -27,15 +29,14 @@ const router = createBrowserRouter([
     path: "/signup",
     element: <SignupPage></SignupPage>,
   },
-  {
-    path: "/prd",
-    element: <ProductList></ProductList>,
-  },
+  
+ 
 ]);
 
 function App() {
   return (
     <div className="App">
+      {/* <Home></Home> */}
     <RouterProvider router={router} />
     </div>
   );
